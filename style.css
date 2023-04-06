@@ -30,17 +30,10 @@ label {
 :hover.card {
     box-shadow: 0 0 10px #ded1c4;
     border-radius: 10px;
-    /* border: 2px solid;
-    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3; */
 }
 
 .card-header h2 {
     background: -webkit-linear-gradient(210deg, #fb8817, #ff4b01, #c12127, #e02aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.card .card-header{
-    color: white;
-    background-color: #000000;
 }
