@@ -1,0 +1,22 @@
+.card {
+    width: 20rem;
+    text-align: center;
+    margin: 10px;
+}
+
+label {
+    color: rgb(140, 116, 85);
+}
+
+.country {
+    font-size: 10px;
+    border: none;
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 400px)
+}
+
