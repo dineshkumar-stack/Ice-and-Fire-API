@@ -2,6 +2,7 @@
     width: 20rem;
     text-align: center;
     margin: 10px;
+    border-radius: 10px;
 }
 
 label {
@@ -17,6 +18,24 @@ label {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4, 400px)
+    grid-template-columns: repeat(4, 350px)
 }
 
+.navbar {
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
+
+:hover.card {
+    box-shadow: 0 0 10px #ded1c4;
+    border-radius: 10px;
+    /* border: 2px solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3; */
+}
+
+.card-header h2 {
+    background: -webkit-linear-gradient(210deg, #fb8817, #ff4b01, #c12127, #e02aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
