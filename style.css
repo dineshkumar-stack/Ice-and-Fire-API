@@ -1,8 +1,9 @@
 .card {
     width: 20rem;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
+    transition: transform .6s;
 }
 
 label {
@@ -30,6 +31,7 @@ label {
 :hover.card {
     box-shadow: 0 0 10px #ded1c4;
     border-radius: 10px;
+    transform: scale(1.1);
 }
 
 .card-header h2 {
