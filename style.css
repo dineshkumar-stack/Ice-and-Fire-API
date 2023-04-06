@@ -39,3 +39,8 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.card .card-header{
+    color: white;
+    background-color: #000000;
+}
