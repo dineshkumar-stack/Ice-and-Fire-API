@@ -39,17 +39,29 @@ async function api(data) {
 
 }
 
+
+
+
+
+
+
+
+
 async function api1() {
   v1 = fetch(`https://anapioficeandfire.com/api/books/`)
   out1 = await v1
   prom1 = out1.json()
   res1 = await prom1
-  console.log(res1)
+
+
+
+
+
+
   for (let i = 0; i <= 11; i++) {
 
     var display = document.getElementById('container')
     var image_ele = document.createElement('div')
-    console.log(res1[i].name)
 
     image_ele.innerHTML = `
         <div class="card" class="d-flex flex-row mb-3">
@@ -61,13 +73,44 @@ async function api1() {
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><label>ISBN :</label> ${res1[i].isbn}</li>
     <li class="list-group-item"><label>Publisher :</label> ${res1[i].publisher}</li>
+    <li class="list-group-item"><label>Publisher :</label> ${res1[i].publisher}</li>
     <li class="list-group-item"><label>Pages :</label> ${res1[i].numberOfPages}</li>
     <li class="list-group-item"><label>Released :</label> ${res1[i].released}</li>
   </ul>
 </div>`
     display.appendChild(image_ele);
-  }
 
+
+
+
+
+    async function api3() {
+      v1 = fetch(`${res1[i].characters[0]}`)
+      out1 = await v1
+      prom1 = out1.json()
+      res3 = await prom1
+    
+      for (let i = 0; i <= 1; i++) {
+        console.log(res3)
+      }
+
+    }
+    api3()
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 }
 
 api1()
