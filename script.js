@@ -81,9 +81,6 @@ async function api1() {
     display.appendChild(image_ele);
 
 
-
-
-
     async function api3() {
       v1 = fetch(`${res1[i].characters[0]}`)
       out1 = await v1
