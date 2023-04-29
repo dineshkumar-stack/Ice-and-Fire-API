@@ -39,24 +39,11 @@ async function api(data) {
 
 }
 
-
-
-
-
-
-
-
-
 async function api1() {
   v1 = fetch(`https://anapioficeandfire.com/api/books/`)
   out1 = await v1
   prom1 = out1.json()
   res1 = await prom1
-
-
-
-
-
 
   for (let i = 0; i <= 11; i++) {
 
@@ -72,7 +59,6 @@ async function api1() {
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><label>ISBN :</label> ${res1[i].isbn}</li>
-    <li class="list-group-item"><label>Publisher :</label> ${res1[i].publisher}</li>
     <li class="list-group-item"><label>Publisher :</label> ${res1[i].publisher}</li>
     <li class="list-group-item"><label>Pages :</label> ${res1[i].numberOfPages}</li>
     <li class="list-group-item"><label>Released :</label> ${res1[i].released}</li>
@@ -93,19 +79,6 @@ async function api1() {
 
     }
     api3()
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
   }
 }
